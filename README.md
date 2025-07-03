@@ -1,6 +1,12 @@
 # 🌙 Synthétiseur de rêves
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://synthreve.streamlit.app/)
+
 **Synthétiseur de rêves** est une application web interactive qui permet à l'utilisateur de raconter un rêve à voix haute (ou d'uploader un fichier audio), d'en obtenir la transcription, une image générée à partir du rêve, une analyse émotionnelle, et de conserver un historique de ses rêves.
+
+---
+
+**🔗 [Accéder à l’application en ligne](https://synthreve.streamlit.app/)**
 
 ---
 

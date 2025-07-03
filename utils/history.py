@@ -19,4 +19,8 @@ def load_historique() -> List[Dict[str, Any]]:
         with open(HISTO_FILE, "r") as f:
             return json.load(f)
     except FileNotFoundError:
-        return [] 
+        return []
+
+def clear_historique():
+    with open(HISTO_FILE, "w") as f:
+        json.dump([], f) 

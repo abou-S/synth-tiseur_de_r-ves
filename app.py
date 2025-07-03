@@ -8,7 +8,7 @@ from utils.audio import transcribe_audio
 from utils.image import generate_image
 from utils.emotion import detect_emotion
 from audiorecorder import audiorecorder
-from utils.history import save_reve, load_historique
+from utils.history import save_reve, load_historique, clear_historique
 import base64
 from datetime import datetime
 
@@ -76,6 +76,9 @@ if audio_bytes:
 
 # Affichage de l'historique dans la sidebar
 st.sidebar.title("Historique des rêves")
+if st.sidebar.button("🗑️ Vider l'historique"):
+    clear_historique()
+    st.sidebar.success("Historique vidé !")
 historique = load_historique()
 for reve in reversed(historique):
     st.sidebar.markdown(f"**{reve['date']}**")
