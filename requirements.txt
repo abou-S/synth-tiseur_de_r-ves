@@ -1,0 +1,7 @@
+streamlit>=1.35
+requests
+groq
+python-dotenv
+mistralai
+streamlit-audiorecorder
+ 
