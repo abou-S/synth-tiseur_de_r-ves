@@ -124,14 +124,21 @@ Ce projet est fourni à des fins pédagogiques. Pour tout usage commercial, merc
 
 ---
 
-## 📊 Étude d'art / Benchmark des APIs
+## 📊 Étude d’art / Benchmark des APIs
 
-| API                | Coût (USD)                | Temps de réponse | Quota / Limite | RGPD / Données |
-|--------------------|---------------------------|------------------|---------------|---------------|
-| **Groq (Whisper)** | ~$0.006 / min audio*      | Rapide (<10s)    | Selon offre   | Données traitées sur serveurs US, pas d'hébergement en Europe, pas RGPD natif |
-| **Mistral**        | ~0.25€ / 1M tokens*       | Rapide (<5s)     | Selon offre   | Serveurs EU, RGPD friendly |
-| **ClipDrop**       | ~1 crédit / image*        | Moyen (5-10s)    | 100 images/mois gratuites, puis payant | Données traitées hors UE, pas RGPD natif |
-| **Pollinations**   | Gratuit (open API)        | Variable (5-20s) | Pas de garantie | Données publiques, pas RGPD |
+| API / Service                | Usage principal         | Coût (USD)                | Temps de réponse | Quota / Limite | RGPD / Données |
+|------------------------------|------------------------|---------------------------|------------------|---------------|---------------|
+| **Groq (Whisper)**           | Speech-to-Text         | ~$0.006 / min audio*      | Rapide (<10s)    | Selon offre   | Données traitées sur serveurs US, pas d’hébergement en Europe, pas RGPD natif |
+| **OpenAI Whisper**           | Speech-to-Text         | ~$0.006 / min audio*      | Rapide (<10s)    | Selon offre   | Données traitées sur serveurs US, pas RGPD natif |
+| **Google Speech-to-Text**    | Speech-to-Text         | ~$0.024 / min audio*      | Rapide (<10s)    | 60 min/mois gratuits, puis payant | Données traitées sur serveurs US, RGPD partiel |
+| **Azure Speech**             | Speech-to-Text         | ~$1 / heure audio*        | Rapide (<10s)    | 5h/mois gratuits, puis payant | Serveurs UE possibles, RGPD possible |
+| **Mistral**                  | LLM / Emotion          | ~0.25€ / 1M tokens*       | Rapide (<5s)     | Selon offre   | Serveurs EU, RGPD friendly |
+| **OpenAI GPT-3.5/4**         | LLM / Emotion          | 0.5$-30$/1M tokens*       | Rapide (<10s)    | Selon offre   | Données traitées sur serveurs US, pas RGPD natif |
+| **ClipDrop**                 | Text-to-Image          | ~1 crédit / image*        | Moyen (5-10s)    | 100 images/mois gratuites, puis payant | Données traitées hors UE, pas RGPD natif |
+| **Pollinations**             | Text-to-Image          | Gratuit (open API)        | Variable (5-20s) | Pas de garantie | Données publiques, pas RGPD |
+| **OpenAI DALL·E**            | Text-to-Image          | ~$0.02 / image*           | Moyen (5-10s)    | Selon offre   | Données traitées sur serveurs US, pas RGPD natif |
+| **Stable Diffusion (API)**   | Text-to-Image          | Variable (ex: 0.01$/img)* | Moyen (5-15s)    | Selon offre   | Selon hébergeur, RGPD variable |
+| **Google Cloud Vision**      | Image Analysis         | ~$1.50 / 1000 images*     | Rapide (<5s)     | 1000 images/mois gratuites | Données traitées sur serveurs US, RGPD partiel |
 
 *Tarifs indicatifs, à vérifier sur les sites officiels. Les quotas et la conformité RGPD peuvent évoluer selon les offres et les usages.
 
